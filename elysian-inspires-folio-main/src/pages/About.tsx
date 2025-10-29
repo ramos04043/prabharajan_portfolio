@@ -58,7 +58,7 @@ const About = () => {
             </p>
           </div>
           <div className="order-1 lg:order-2">
-            <div className="aspect-[3/4] bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl shadow-2xl" />
+            <div className="aspect-[4/4] bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl shadow-2xl" />
           </div>
         </div>
       </section>
@@ -253,6 +253,24 @@ const About = () => {
               <p className="text-lg pt-2">{credential.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section className="section-container">
+        <h2 className="font-display text-center mb-12">Our Moments</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300">
+            <img 
+              src="/IMG-20251028-WA0003.jpg" 
+              alt="Counselling Session"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col gap-2 p-6 text-center">
+              <h3 className="font-display text-xl">Counselling Session</h3>
+              <p className="text-sm text-primary">Sessions</p>
+            </div>
+          </div>
         </div>
       </section>
 
